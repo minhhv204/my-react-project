@@ -21,8 +21,8 @@ const HeaderWebsite = () => {
               <Link to='/about' className='navbar-toggler tw-no-underline' type='button'>
                 <p className='tw-text-white'>About Me</p>
               </Link>
-              <Link to='/admin' className='navbar-toggler tw-no-underline tw-mr-2' type='button'>
-                <p className='tw-text-white'>Admin</p>
+              <Link to='/products' className='navbar-toggler tw-no-underline tw-mr-2' type='button'>
+                <p className='tw-text-white'>Products</p>
               </Link>
             </div>
           </div>

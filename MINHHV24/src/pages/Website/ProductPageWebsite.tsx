@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import instance from '~/apis'
@@ -8,7 +7,7 @@ const ProductPageWebsite = () => {
   const [products, setProducts] = useState<TProduct[]>([])
   useEffect(() => {
     ;(async () => {
-      const { data } = await instance.get(`/products`);
+      const { data } = await instance.get(`/products`)
       setProducts(data)
     })()
   }, [])
@@ -17,7 +16,7 @@ const ProductPageWebsite = () => {
       <h2 className='tw-text-center tw-mt-4 tw-border-b-2'>Danh Sách Sản Phẩm</h2>
       <div className='tw-mt-5 '>
         <div className='row row-cols-1 row-cols row-cols-md-5 g-1  '>
-          {products?.map((product: TProduct, index) => (
+          {products?.map((product: TProduct, index: number) => (
             <div className='card shadow-sm tw-m-8  ' key={index}>
               <img className='tw-w-[300px] tw-h-[250px] tw-p-3' src={product.thumbnail}></img>
               <div className='card-body tw-text-center'>
