@@ -14,11 +14,11 @@ const HeaderWebsite = () => {
               />
             </Link>
             <div className='tw-m-2 '>
-              <Link to='/sigin' className='navbar-toggler tw-mr-2 tw-no-underline ' type='button'>
+              <Link to='/' className='navbar-toggler tw-mr-2 tw-no-underline ' type='button'>
                 <p className='tw-text-white  '>Tài Khoản</p>
               </Link>
 
-              <Link to='/about' className='navbar-toggler tw-no-underline' type='button'>
+              <Link to='/' className='navbar-toggler tw-no-underline' type='button'>
                 <p className='tw-text-white'>About Me</p>
               </Link>
               <Link to='/products' className='navbar-toggler tw-no-underline tw-mr-2' type='button'>
