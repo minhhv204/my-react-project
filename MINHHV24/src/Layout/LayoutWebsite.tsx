@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import HeaderWebsite from '../components/HeaderWebsite';
+import { Outlet } from 'react-router-dom';
 import FooterWebsite from '../components/FooterWebsite';
+import HeaderWebsite from '../components/HeaderWebsite';
 
 const LayoutWebsite = () => {
   return (
