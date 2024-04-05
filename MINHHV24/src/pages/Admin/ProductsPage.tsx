@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
 interface ProductPageProps {
-  products: TProduct[] // Khai báo kiểu dữ liệu cho mảng products
+  products: TProduct[]// Khai báo kiểu dữ liệu cho mảng products
   onRemove: (id: number) => void // Khai báo kiểu dữ liệu cho hàm onRemove
 }
 // eslint-disable-next-line no-unused-vars
-const ProductPage: React.FC<ProductPageProps> = ({ products, onRemove }) => {
+const ProductPage: React.FC<ProductPageProps> = ({ products,onRemove }) => {
   return (
     <>
       <div className='table-responsive small tw-p-5'>
@@ -32,7 +32,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ products, onRemove }) => {
             </tr>
           </thead>
           <tbody>
-            {products.map((product: TProduct, index: number) => (
+            {products?.map((product: TProduct, index: number) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>

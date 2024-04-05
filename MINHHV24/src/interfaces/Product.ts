@@ -1,8 +1,8 @@
 export type TProduct = {
   id?: number
-  title: string | undefined
+  title?: string
   description?: string
-  price: number | undefined
+  price?: number
   discountPercentage?: number
   rating?: number
   stock?: number

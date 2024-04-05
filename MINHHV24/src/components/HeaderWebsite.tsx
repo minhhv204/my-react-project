@@ -14,12 +14,12 @@ const HeaderWebsite = () => {
               />
             </Link>
             <div className='tw-m-2 '>
-              <Link to='/' className='navbar-toggler tw-mr-2 tw-no-underline ' type='button'>
+              <Link to='/register' className='navbar-toggler tw-mr-2 tw-no-underline ' type='button'>
                 <p className='tw-text-white  '>Tài Khoản</p>
               </Link>
 
-              <Link to='/' className='navbar-toggler tw-no-underline' type='button'>
-                <p className='tw-text-white'>About Me</p>
+              <Link to='/admin/products' className='navbar-toggler tw-no-underline' type='button'>
+                <p className='tw-text-white'>Admin Page</p>
               </Link>
               <Link to='/products' className='navbar-toggler tw-no-underline tw-mr-2' type='button'>
                 <p className='tw-text-white'>Products</p>
